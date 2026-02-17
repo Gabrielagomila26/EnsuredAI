@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MatchWorks Results — Your Career Alignment</title>
+    <meta
+      name="description"
+      content="See how your assessment scores align with key career paths like Graphic Designer and Software Engineer."
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#e8f0ff",
+                100: "#d0e0ff",
+                200: "#a6c1ff",
+                300: "#7c9cff",
+                400: "#5673d6",
+                500: "#3349b8",
+                600: "#263894",
+                700: "#1c2a70",
+                800: "#151f52",
+                900: "#0e1435",
+              },
+            },
+            boxShadow: {
+              soft: "0 22px 45px rgba(15, 23, 42, 0.2)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+    <div class="relative min-h-screen overflow-hidden">
+      <!-- Background accents -->
+      <div
+        class="pointer-events-none absolute -top-40 -left-40 h-96 w-96 rounded-full bg-brand-500/25 blur-3xl"
+        aria-hidden="true"
+      ></div>
+      <div
+        class="pointer-events-none absolute -bottom-40 -right-40 h-[26rem] w-[26rem] rounded-full bg-brand-800/40 blur-3xl"
+        aria-hidden="true"
+      ></div>
+
+      <!-- Header -->
+      <header
+        class="relative z-20 border-b border-slate-900/70 bg-slate-950/85 backdrop-blur-xl"
+      >
+        <div class="mx-auto flex max-w-5xl items-center justify-between px-5 py-4 lg:px-4">
+          <a href="index.html" class="flex items-center gap-3">
+            <div
+              class="flex h-9 w-9 items-center justify-center rounded-2xl bg-gradient-to-tr from-brand-500 to-brand-300 shadow-soft"
+            >
+              <span class="text-sm font-black tracking-tight text-white">MW</span>
+            </div>
+            <div>
+              <p class="text-sm font-semibold tracking-tight text-white">MatchWorks</p>
+              <p class="text-[0.7rem] text-slate-400">Results</p>
+            </div>
+          </a>
+          <a
+            href="survey.html"
+            class="inline-flex items-center gap-1 rounded-full border border-slate-700 px-3 py-1.5 text-[0.7rem] font-medium text-slate-200 transition hover:border-slate-500 hover:bg-slate-900"
+          >
+            Retake assessment
+          </a>
+        </div>
+      </header>
+
+      <!-- Main -->
+      <main class="relative z-10">
+        <section class="mx-auto max-w-5xl px-5 py-10 lg:px-4 lg:py-12">
+          <!-- Intro -->
+          <div class="max-w-2xl space-y-3">
+            <p class="text-xs font-medium uppercase tracking-[0.22em] text-brand-300">
+              Your snapshot
+            </p>
+            <h1 class="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+              Here’s how your strengths line up with key career paths.
+            </h1>
+            <p class="text-sm text-slate-300 sm:text-base">
+              These results summarize your scores across four themes and highlight a suggested
+              direction. Use this as a starting point for deeper exploration, not a final
+              answer.
+            </p>
+          </div>
+
+          <!-- Content layout -->
+          <div class="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)]">
+            <!-- Primary recommendation -->
+            <div
+              class="space-y-6 rounded-3xl border border-slate-900/80 bg-slate-950/75 p-5 shadow-soft backdrop-blur-xl sm:p-7"
+            >
+              <div class="flex items-start justify-between gap-4">
+                <div class="space-y-1.5">
+                  <p class="text-[0.7rem] font-medium uppercase tracking-[0.22em] text-slate-400">
+                    Suggested direction
+                  </p>
+                  <div class="flex flex-wrap items-center gap-3">
+                    <h2
+                      id="primary-role"
+                      class="text-xl font-semibold tracking-tight text-white sm:text-2xl"
+                    >
+                      Complete the assessment first
+                    </h2>
+                    <span
+                      id="primary-tag"
+                      class="inline-flex items-center rounded-full bg-brand-500/15 px-3 py-1 text-[0.68rem] font-medium text-brand-100 ring-1 ring-brand-400/50"
+                    >
+                      Awaiting results
+                    </span>
+                  </div>
+                  <p
+                    id="primary-description"
+                    class="text-sm text-slate-300"
+                  >
+                    Once you complete the assessment, we’ll analyze your responses and show how
+                    they align with creative, technical, leadership, and helping-focused work.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Score summary header -->
+              <div
+                class="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl bg-slate-900/60 px-4 py-3"
+              >
+                <div>
+                  <p class="text-[0.7rem] font-medium uppercase tracking-[0.22em] text-slate-400">
+                    Category scores
+                  </p>
+                  <p class="text-xs text-slate-300">
+                    Higher scores suggest stronger energy or interest in that area.
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 text-[0.7rem] text-slate-400">
+                  <span class="inline-flex h-2 w-2 rounded-full bg-brand-300"></span>
+                  <span>Max 50 per category</span>
+                </div>
+              </div>
+
+              <!-- Scores grid -->
+              <div class="mt-4 grid gap-4 sm:grid-cols-2">
+                <!-- Creativity -->
+                <div class="space-y-2 rounded-2xl bg-slate-900/70 p-4">
+                  <div class="flex items-center justify-between gap-2">
+                    <p class="text-sm font-semibold text-slate-100">Creativity</p>
+                    <span
+                      id="creativity-score"
+                      class="text-sm font-semibold text-brand-200"
+                      >–</span
+                    >
+                  </div>
+                  <p id="creativity-detail" class="text-[0.75rem] text-slate-400">
+                    Visual thinking, design, and open-ended problem solving.
+                  </p>
+                  <div class="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-slate-800">
+                    <div
+                      id="creativity-bar"
+                      class="h-full w-0 rounded-full bg-gradient-to-r from-brand-300 to-brand-100"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- Logic / Tech -->
+                <div class="space-y-2 rounded-2xl bg-slate-900/70 p-4">
+                  <div class="flex items-center justify-between gap-2">
+                    <p class="text-sm font-semibold text-slate-100">Logic / Tech</p>
+                    <span
+                      id="logic-score"
+                      class="text-sm font-semibold text-brand-200"
+                      >–</span
+                    >
+                  </div>
+                  <p id="logic-detail" class="text-[0.75rem] text-slate-400">
+                    Analytical thinking, problem decomposition, and comfort with systems.
+                  </p>
+                  <div class="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-slate-800">
+                    <div
+                      id="logic-bar"
+                      class="h-full w-0 rounded-full bg-gradient-to-r from-brand-300 to-brand-100"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- Leadership -->
+                <div class="space-y-2 rounded-2xl bg-slate-900/70 p-4">
+                  <div class="flex items-center justify-between gap-2">
+                    <p class="text-sm font-semibold text-slate-100">Leadership</p>
+                    <span
+                      id="leadership-score"
+                      class="text-sm font-semibold text-brand-200"
+                      >–</span
+                    >
+                  </div>
+                  <p id="leadership-detail" class="text-[0.75rem] text-slate-400">
+                    Decision-making, visibility, and guiding others toward outcomes.
+                  </p>
+                  <div class="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-slate-800">
+                    <div
+                      id="leadership-bar"
+                      class="h-full w-0 rounded-full bg-gradient-to-r from-brand-300 to-brand-100"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- Helping -->
+                <div class="space-y-2 rounded-2xl bg-slate-900/70 p-4">
+                  <div class="flex items-center justify-between gap-2">
+                    <p class="text-sm font-semibold text-slate-100">Helping</p>
+                    <span
+                      id="helping-score"
+                      class="text-sm font-semibold text-brand-200"
+                      >–</span
+                    >
+                  </div>
+                  <p id="helping-detail" class="text-[0.75rem] text-slate-400">
+                    Teaching, coaching, and supporting people one-on-one or in groups.
+                  </p>
+                  <div class="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-slate-800">
+                    <div
+                      id="helping-bar"
+                      class="h-full w-0 rounded-full bg-gradient-to-r from-brand-300 to-brand-100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Consultation panel -->
+            <aside
+              class="space-y-5 rounded-3xl border border-slate-900/80 bg-slate-950/80 p-5 shadow-soft backdrop-blur-xl sm:p-6"
+            >
+              <div class="space-y-2">
+                <p class="text-[0.7rem] font-medium uppercase tracking-[0.22em] text-slate-400">
+                  Talk it through
+                </p>
+                <h2 class="text-lg font-semibold text-white">Book a consultation</h2>
+                <p class="text-sm text-slate-300">
+                  Sit down with a career specialist to unpack your results, explore options
+                  like design, engineering, or people-focused roles, and map out concrete next
+                  steps.
+                </p>
+              </div>
+
+              <ul class="space-y-2 text-[0.8rem] text-slate-200">
+                <li class="flex gap-2">
+                  <span class="mt-1 h-1 w-1 rounded-full bg-brand-300"></span>
+                  <span>30-minute 1:1 conversation tailored to your profile.</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-1 h-1 w-1 rounded-full bg-brand-300"></span>
+                  <span>Review how your scores align with real-world roles.</span>
+                </li>
+                <li class="flex gap-2">
+                  <span class="mt-1 h-1 w-1 rounded-full bg-brand-300"></span>
+                  <span>Leave with 2–3 concrete action items.</span>
+                </li>
+              </ul>
+
+              <div class="space-y-3 pt-1">
+                <a
+                  href="success.html"
+                  id="book-consultation"
+                  class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand-500 px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-brand-400"
+                >
+                  Book a Consultation
+                </a>
+                <p class="text-[0.7rem] text-slate-400">
+                  Prefer to review on your own? You can always retake the assessment or share
+                  this page with a mentor or advisor.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      function loadResults() {
+        const raw = localStorage.getItem("mw-assessment-responses");
+        const primaryRoleEl = document.getElementById("primary-role");
+        const primaryTagEl = document.getElementById("primary-tag");
+        const primaryDescEl = document.getElementById("primary-description");
+
+        if (!raw) {
+          primaryRoleEl.textContent = "Complete the assessment first";
+          primaryTagEl.textContent = "Awaiting results";
+          primaryDescEl.textContent =
+            "We couldn't find any recent responses. Please complete the assessment so we can generate your personalized snapshot.";
+          return;
+        }
+
+        let parsed;
+        try {
+          parsed = JSON.parse(raw);
+        } catch {
+          primaryDescEl.textContent =
+            "There was an issue reading your results. Try retaking the assessment to refresh your scores.";
+          return;
+        }
+
+        const responses = parsed.responses || {};
+        const get = (id) => {
+          const v = Number(responses[id]);
+          return Number.isFinite(v) ? v : 0;
+        };
+
+        const sums = {
+          creativity:
+            get("q1") + get("q2") + get("q3") + get("q4") + get("q5"),
+          logic:
+            get("q6") + get("q7") + get("q8") + get("q9") + get("q10"),
+          leadership:
+            get("q11") +
+            get("q12") +
+            get("q13") +
+            get("q14") +
+            get("q15"),
+          helping:
+            get("q16") +
+            get("q17") +
+            get("q18") +
+            get("q19") +
+            get("q20"),
+        };
+
+        const maxPossible = 50; // 5 questions × max 10
+
+        // Update score text and bars
+        const categories = [
+          "creativity",
+          "logic",
+          "leadership",
+          "helping",
+        ];
+
+        categories.forEach((key) => {
+          const score = sums[key];
+          const scoreEl = document.getElementById(key + "-score");
+          const barEl = document.getElementById(key + "-bar");
+          if (scoreEl) {
+            scoreEl.textContent = score + " / " + maxPossible;
+          }
+          if (barEl) {
+            const pct = Math.max(
+              4,
+              Math.min(100, (score / maxPossible) * 100)
+            );
+            barEl.style.width = pct + "%";
+          }
+        });
+
+        // Determine primary suggestion
+        const entries = Object.entries(sums).sort((a, b) => b[1] - a[1]);
+        const [topKey, topScore] = entries[0] || ["creativity", 0];
+        const avg = topScore / 5;
+
+        let suggestedRole = "Explore multiple options";
+        let tag = "Balanced profile";
+        let description =
+          "Your scores are relatively even across categories, which means you may thrive in roles that blend creativity, logic, leadership, and helping.";
+
+        if (topKey === "creativity") {
+          suggestedRole = "Graphic Designer";
+          tag = "Creativity-leaning profile";
+          description =
+            "Your answers show strong creative energy—especially around visual thinking and open-ended work. Paths like Graphic Designer, Brand Designer, or Content Designer could be a great fit.";
+        } else if (topKey === "logic") {
+          suggestedRole = "Software Engineer";
+          tag = "Logic/Tech-leaning profile";
+          description =
+            "You score highly on analytical problem solving and interest in systems. Roles like Software Engineer, Data Analyst, or Technical Product roles may align well with your strengths.";
+        }
+
+        primaryRoleEl.textContent = suggestedRole;
+        primaryTagEl.textContent = tag;
+        primaryDescEl.textContent = description;
+      }
+
+      document.addEventListener("DOMContentLoaded", loadResults);
+    </script>
+  </body>
+</html>
+

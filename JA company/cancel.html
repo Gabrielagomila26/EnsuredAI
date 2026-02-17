@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Cancelled | MatchWorks</title>
+    <meta
+      name="description"
+      content="Your checkout was cancelled and no payment was processed. You can safely return to your results or try again."
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#e8f0ff",
+                100: "#d0e0ff",
+                200: "#a6c1ff",
+                300: "#7c9cff",
+                400: "#5673d6",
+                500: "#3349b8",
+                600: "#263894",
+                700: "#1c2a70",
+                800: "#151f52",
+                900: "#0e1435",
+              },
+            },
+            boxShadow: {
+              soft: "0 22px 45px rgba(15, 23, 42, 0.2)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+    <main class="min-h-screen flex items-center justify-center px-6">
+      <div
+        class="relative w-full max-w-lg overflow-hidden rounded-3xl border border-slate-800 bg-slate-950/80 shadow-2xl shadow-slate-900/70"
+      >
+        <!-- Accent gradient -->
+        <div
+          class="pointer-events-none absolute -top-32 -right-10 h-52 w-52 rounded-full bg-brand-500/20 blur-3xl"
+          aria-hidden="true"
+        ></div>
+        <div
+          class="pointer-events-none absolute -bottom-32 -left-10 h-52 w-52 rounded-full bg-brand-900/40 blur-3xl"
+          aria-hidden="true"
+        ></div>
+
+        <section class="relative px-6 py-8 sm:px-8 sm:py-10">
+          <div
+            class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-3 py-1 text-xs font-medium text-slate-200 ring-1 ring-slate-700/80"
+          >
+            <span class="inline-flex h-1.5 w-1.5 rounded-full bg-amber-400"></span>
+            Checkout cancelled
+          </div>
+
+          <div class="mt-5 space-y-3">
+            <h1 class="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+              Your payment wasn&#39;t completed.
+            </h1>
+            <p class="text-sm text-slate-300 sm:text-base">
+              It looks like you closed the window or went back a step before finishing your
+              purchase. No charges were made and your details are safe.
+            </p>
+          </div>
+
+          <div class="mt-6 space-y-4 rounded-2xl bg-slate-900/70 p-4 text-sm text-slate-200">
+            <p class="font-medium text-slate-100">You can:</p>
+            <ul class="space-y-2 text-sm text-slate-300">
+              <li class="flex gap-2">
+                <span class="mt-1 h-1 w-1 rounded-full bg-brand-300"></span>
+                <span>Return to checkout if you still want to book a consultation.</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="mt-1 h-1 w-1 rounded-full bg-brand-300"></span>
+                <span>Go back to your results and explore on your own.</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="mt-1 h-1 w-1 rounded-full bg-brand-300"></span>
+                <span>Contact our team if something didn&#39;t work as expected.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="mt-6 flex flex-col-reverse items-stretch justify-between gap-3 sm:flex-row sm:items-center"
+          >
+            <a
+              href="index.html"
+              class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-700 px-4 py-2 text-xs font-medium text-slate-200 transition hover:border-slate-500 hover:bg-slate-900"
+            >
+              Back to home
+            </a>
+            <div class="flex flex-col gap-3 sm:flex-row">
+              <a
+                href="results.html"
+                class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-700 px-4 py-2 text-xs font-medium text-slate-200 transition hover:border-slate-500 hover:bg-slate-900"
+              >
+                View my results
+              </a>
+              <a
+                href="success.html"
+                class="inline-flex items-center justify-center gap-2 rounded-full bg-brand-500 px-5 py-2.5 text-xs font-semibold text-white shadow-lg shadow-brand-900/50 transition hover:bg-brand-400"
+              >
+                Try checkout again
+              </a>
+            </div>
+          </div>
+
+          <p class="mt-4 text-[0.7rem] text-slate-500">
+            Think this was a mistake or need help completing your payment?
+            <a
+              href="mailto:support@example.com"
+              class="ml-1 text-slate-200 underline-offset-4 hover:underline"
+              >Contact our support team</a
+            >.
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
+

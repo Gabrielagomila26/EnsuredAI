@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MatchWorks — Precision Job Matching for Modern Teams</title>
+    <meta
+      name="description"
+      content="MatchWorks uses a science-backed assessment to match top talent with roles where they truly thrive. Take the assessment and discover your best-fit opportunities."
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#e8f0ff",
+                100: "#d0e0ff",
+                200: "#a6c1ff",
+                300: "#7c9cff",
+                400: "#5673d6",
+                500: "#3349b8",
+                600: "#263894",
+                700: "#1c2a70",
+                800: "#151f52",
+                900: "#0e1435",
+              },
+            },
+            boxShadow: {
+              soft: "0 22px 45px rgba(15, 23, 42, 0.18)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+    <!-- Page wrapper -->
+    <div class="relative overflow-hidden">
+      <!-- Decorative gradient blobs -->
+      <div
+        class="pointer-events-none absolute -top-40 -left-40 h-96 w-96 rounded-full bg-brand-500/20 blur-3xl"
+        aria-hidden="true"
+      ></div>
+      <div
+        class="pointer-events-none absolute -bottom-40 -right-40 h-[28rem] w-[28rem] rounded-full bg-brand-400/10 blur-3xl"
+        aria-hidden="true"
+      ></div>
+
+      <!-- Navigation -->
+      <header
+        class="relative z-20 border-b border-slate-800/60 bg-slate-950/80 backdrop-blur-xl"
+      >
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-4">
+          <div class="flex items-center gap-3">
+            <div
+              class="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-tr from-brand-500 to-brand-300 shadow-soft"
+            >
+              <span class="text-xl font-black tracking-tight text-white">MW</span>
+            </div>
+            <div>
+              <p class="text-sm font-semibold tracking-tight text-white">
+                MatchWorks
+              </p>
+              <p class="text-xs text-slate-400">
+                Precision job matching, powered by insights.
+              </p>
+            </div>
+          </div>
+
+          <nav class="hidden items-center gap-8 text-sm font-medium text-slate-300 md:flex">
+            <a href="#how-it-works" class="transition hover:text-white"
+              >How it works</a
+            >
+            <a href="#for-candidates" class="transition hover:text-white"
+              >For candidates</a
+            >
+            <a href="#for-employers" class="transition hover:text-white"
+              >For employers</a
+            >
+            <a href="#faq" class="transition hover:text-white">FAQ</a>
+          </nav>
+
+          <div class="flex items-center gap-3">
+            <button
+              class="hidden rounded-full border border-slate-700 px-4 py-1.5 text-xs font-medium text-slate-200 transition hover:border-slate-500 hover:bg-slate-900 md:inline-flex"
+            >
+              Sign in
+            </button>
+            <a
+              href="#assessment"
+              class="inline-flex items-center gap-2 rounded-full bg-brand-500 px-4 py-2 text-xs font-semibold text-white shadow-soft transition hover:bg-brand-400"
+            >
+              Take the Assessment
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main content -->
+      <main class="relative z-10">
+        <!-- Hero Section -->
+        <section
+          id="assessment"
+          class="mx-auto flex max-w-6xl flex-col gap-14 px-6 py-16 lg:flex-row lg:items-center lg:py-20"
+        >
+          <!-- Left / copy -->
+          <div class="max-w-xl space-y-8">
+            <div
+              class="inline-flex items-center gap-2 rounded-full border border-brand-500/30 bg-brand-500/10 px-3 py-1 text-xs font-medium text-brand-100"
+            >
+              <span class="inline-flex h-1.5 w-1.5 rounded-full bg-brand-300"></span>
+              Matching thousands of professionals to roles they love
+            </div>
+
+            <div class="space-y-4">
+              <h1
+                class="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-[3.2rem]"
+              >
+                Unlock your best-fit role with a
+                <span class="bg-gradient-to-r from-brand-300 via-brand-200 to-brand-400 bg-clip-text text-transparent"
+                  >science-backed assessment.</span
+                >
+              </h1>
+              <p class="max-w-xl text-sm leading-relaxed text-slate-300 sm:text-base">
+                MatchWorks goes beyond keywords and résumés. Our assessment maps your
+                strengths, work style, and ambitions to curated opportunities where you can
+                actually thrive—not just get hired.
+              </p>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4">
+              <a
+                href="#assessment"
+                class="group inline-flex items-center gap-2 rounded-full bg-brand-500 px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-brand-400"
+              >
+                Take the Assessment
+                <span
+                  class="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                  aria-hidden="true"
+                  >→</span
+                >
+              </a>
+              <button
+                class="inline-flex items-center gap-2 rounded-full border border-slate-700 px-4 py-2 text-xs font-medium text-slate-200 transition hover:border-slate-500 hover:bg-slate-900"
+              >
+                View sample report
+              </button>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-6 pt-4">
+              <div>
+                <p class="text-xl font-semibold text-white">92%</p>
+                <p class="text-xs text-slate-400">
+                  of candidates feel they’re better-matched after one week.
+                </p>
+              </div>
+              <div class="h-10 w-px bg-slate-800"></div>
+              <div class="space-y-1">
+                <p class="text-xs font-medium uppercase tracking-[0.18em] text-slate-400">
+                  Trusted by teams at
+                </p>
+                <div class="flex flex-wrap items-center gap-3 text-xs text-slate-400">
+                  <span class="rounded-full bg-slate-900/60 px-3 py-1">Northbridge Labs</span>
+                  <span class="rounded-full bg-slate-900/60 px-3 py-1">Crestline Capital</span>
+                  <span class="rounded-full bg-slate-900/60 px-3 py-1">Nova Health</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right / visual card -->
+          <div
+            class="relative mx-auto w-full max-w-md rounded-3xl border border-slate-800/80 bg-slate-900/60 p-5 shadow-soft backdrop-blur-xl"
+          >
+            <!-- Floating badge -->
+            <div
+              class="absolute -top-6 right-6 inline-flex items-center gap-2 rounded-full bg-brand-400/10 px-3 py-1 text-xs font-medium text-brand-200 ring-1 ring-brand-400/40"
+            >
+              <span class="inline-flex h-1.5 w-1.5 rounded-full bg-brand-300"></span>
+              Top 5% talent spotlight
+            </div>
+
+            <div class="space-y-6">
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-xs font-medium uppercase tracking-[0.18em] text-slate-400">
+                    Snapshot
+                  </p>
+                  <p class="mt-1 text-sm font-semibold text-white">
+                    Ideal Opportunity Match
+                  </p>
+                </div>
+                <div
+                  class="flex items-center gap-1 rounded-full bg-slate-900/80 px-3 py-1 text-xs text-slate-300"
+                >
+                  <span class="h-1.5 w-1.5 rounded-full bg-brand-300"></span>
+                  Live match engine
+                </div>
+              </div>
+
+              <!-- Radial score -->
+              <div class="flex items-center gap-5">
+                <div
+                  class="relative flex h-28 w-28 items-center justify-center rounded-full bg-slate-900"
+                >
+                  <div
+                    class="absolute inset-1 rounded-full bg-gradient-to-tr from-brand-500 via-brand-400 to-brand-300 opacity-60 blur-xl"
+                  ></div>
+                  <div
+                    class="relative flex h-24 w-24 items-center justify-center rounded-full bg-slate-950"
+                  >
+                    <span class="text-2xl font-semibold text-white">93</span>
+                    <span class="ml-1 text-xs text-slate-400">/100</span>
+                  </div>
+                </div>
+                <div class="flex-1 space-y-3">
+                  <div class="flex items-center justify-between text-xs">
+                    <span class="text-slate-300">Role alignment</span>
+                    <span class="text-slate-200">Strong</span>
+                  </div>
+                  <div class="h-1.5 w-full overflow-hidden rounded-full bg-slate-800">
+                    <div class="h-full w-4/5 rounded-full bg-gradient-to-r from-brand-400 to-brand-200"></div>
+                  </div>
+                  <div class="flex items-center justify-between text-xs">
+                    <span class="text-slate-300">Team dynamics fit</span>
+                    <span class="text-slate-200">Exceptional</span>
+                  </div>
+                  <div class="h-1.5 w-full overflow-hidden rounded-full bg-slate-800">
+                    <div class="h-full w-11/12 rounded-full bg-gradient-to-r from-brand-200 to-brand-400"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Trait grid -->
+              <div class="grid grid-cols-2 gap-3 text-xs">
+                <div class="space-y-1 rounded-2xl bg-slate-900/80 p-3">
+                  <p class="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-slate-400">
+                    Core Strength
+                  </p>
+                  <p class="text-sm font-semibold text-white">Strategic Builder</p>
+                  <p class="text-[0.7rem] text-slate-400">
+                    Thrives where vision, execution, and ownership intersect.
+                  </p>
+                </div>
+                <div class="space-y-1 rounded-2xl bg-slate-900/80 p-3">
+                  <p class="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-slate-400">
+                    Ideal Environments
+                  </p>
+                  <p class="text-sm font-semibold text-white">Product, Strategy, Growth</p>
+                  <p class="text-[0.7rem] text-slate-400">
+                    High-autonomy roles with measurable impact and clear outcomes.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Micro steps -->
+              <div class="flex items-center justify-between border-t border-slate-800 pt-4">
+                <div class="space-y-1">
+                  <p class="text-[0.68rem] font-medium uppercase tracking-[0.22em] text-slate-400">
+                    Next step
+                  </p>
+                  <p class="text-xs text-slate-200">
+                    8-minute assessment • Instant insights • Private by default
+                  </p>
+                </div>
+                <a
+                  href="#assessment"
+                  class="inline-flex items-center rounded-full bg-slate-100 px-4 py-1.5 text-xs font-semibold text-slate-900 transition hover:bg-white"
+                >
+                  Start now
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- How it works -->
+        <section
+          id="how-it-works"
+          class="border-t border-slate-900/80 bg-slate-950/80 py-14"
+        >
+          <div class="mx-auto max-w-6xl px-6 lg:px-4">
+            <div class="flex flex-col justify-between gap-8 md:flex-row md:items-end">
+              <div class="max-w-xl space-y-3">
+                <p class="text-xs font-medium uppercase tracking-[0.22em] text-brand-300">
+                  How it works
+                </p>
+                <h2 class="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+                  A clear path from self-knowledge to the right offer.
+                </h2>
+                <p class="text-sm text-slate-300 sm:text-base">
+                  We’ve streamlined the experience so you get meaningful clarity—not a
+                  personality quiz. Every step is designed with hiring teams and candidates
+                  in mind.
+                </p>
+              </div>
+              <div class="text-xs text-slate-400 md:text-right">
+                <p>Average time to first curated opportunity: <span class="text-slate-100">5 days</span></p>
+                <p>Built in partnership with organizational psychologists.</p>
+              </div>
+            </div>
+
+            <div class="mt-10 grid gap-6 md:grid-cols-3">
+              <div
+                class="flex flex-col gap-3 rounded-2xl border border-slate-800 bg-slate-950/60 p-5"
+              >
+                <div
+                  class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-brand-500/15 text-xs font-semibold text-brand-200"
+                >
+                  1
+                </div>
+                <h3 class="text-sm font-semibold text-white">
+                  Take the assessment (8–10 minutes)
+                </h3>
+                <p class="text-xs text-slate-300">
+                  A focused, adaptive assessment that captures your strengths, work
+                  preferences, and long-term trajectory—without intrusive questions.
+                </p>
+              </div>
+
+              <div
+                class="flex flex-col gap-3 rounded-2xl border border-slate-800 bg-slate-950/60 p-5"
+              >
+                <div
+                  class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-brand-500/15 text-xs font-semibold text-brand-200"
+                >
+                  2
+                </div>
+                <h3 class="text-sm font-semibold text-white">
+                  Review your personalized insight report
+                </h3>
+                <p class="text-xs text-slate-300">
+                  Get a clear summary of the environments, cultures, and responsibilities
+                  where you’re most likely to perform at your best.
+                </p>
+              </div>
+
+              <div
+                class="flex flex-col gap-3 rounded-2xl border border-slate-800 bg-slate-950/60 p-5"
+              >
+                <div
+                  class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-brand-500/15 text-xs font-semibold text-brand-200"
+                >
+                  3
+                </div>
+                <h3 class="text-sm font-semibold text-white">
+                  Get matched to curated opportunities
+                </h3>
+                <p class="text-xs text-slate-300">
+                  We connect you with roles and teams aligned to your profile. You decide
+                  what to pursue—your data stays under your control.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Split section: candidates / employers -->
+        <section
+          id="for-candidates"
+          class="border-t border-slate-900/80 bg-gradient-to-b from-slate-950 via-slate-950 to-slate-950 py-16"
+        >
+          <div class="mx-auto max-w-6xl px-6 lg:px-4">
+            <div class="grid gap-10 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
+              <!-- Candidates -->
+              <div class="space-y-5">
+                <p class="text-xs font-medium uppercase tracking-[0.22em] text-brand-300">
+                  For candidates
+                </p>
+                <h2 class="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+                  Stop gaming job boards. Start matching with roles built for you.
+                </h2>
+                <p class="text-sm text-slate-300 sm:text-base">
+                  Whether you’re exploring your next step or actively searching, MatchWorks
+                  helps you see where you’ll actually be energized—not just what you’re
+                  qualified for on paper.
+                </p>
+                <ul class="space-y-3 text-sm text-slate-200">
+                  <li class="flex gap-3">
+                    <span class="mt-1 h-1.5 w-1.5 rounded-full bg-brand-300"></span>
+                    <span>Private by default—share your profile only with companies you choose.</span>
+                  </li>
+                  <li class="flex gap-3">
+                    <span class="mt-1 h-1.5 w-1.5 rounded-full bg-brand-300"></span>
+                    <span>See role alignment explained in plain language, not just scores.</span>
+                  </li>
+                  <li class="flex gap-3">
+                    <span class="mt-1 h-1.5 w-1.5 rounded-full bg-brand-300"></span>
+                    <span>Use your report in conversations with hiring managers and your current team.</span>
+                  </li>
+                </ul>
+
+                <div class="pt-3">
+                  <a
+                    href="#assessment"
+                    class="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-xs font-semibold text-slate-950 shadow-soft transition hover:bg-slate-100"
+                  >
+                    Take the Assessment
+                    <span aria-hidden="true">→</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Employers -->
+              <div
+                id="for-employers"
+                class="space-y-4 rounded-3xl border border-slate-800 bg-slate-950/80 p-5"
+              >
+                <div class="flex items-center justify-between gap-4">
+                  <div>
+                    <p class="text-xs font-medium uppercase tracking-[0.22em] text-slate-400">
+                      For employers
+                    </p>
+                    <h3 class="mt-1 text-sm font-semibold text-white">
+                      Reduce mis-hires. Build resilient teams.
+                    </h3>
+                  </div>
+                  <span
+                    class="inline-flex items-center rounded-full bg-brand-400/10 px-3 py-1 text-[0.68rem] font-medium text-brand-200 ring-1 ring-brand-400/40"
+                  >
+                    Beta partner program
+                  </span>
+                </div>
+
+                <p class="text-xs text-slate-300">
+                  MatchWorks aligns candidate profiles to the realities of your roles and team
+                  culture—before you invest weeks in interviews.
+                </p>
+
+                <ul class="space-y-2 text-xs text-slate-200">
+                  <li class="flex gap-2">
+                    <span class="mt-1 h-1 w-1 rounded-full bg-brand-400"></span>
+                    <span>Structured insight summaries for every candidate, shared with your ATS.</span>
+                  </li>
+                  <li class="flex gap-2">
+                    <span class="mt-1 h-1 w-1 rounded-full bg-brand-400"></span>
+                    <span>Custom success profiles calibrated to your top performers.</span>
+                  </li>
+                  <li class="flex gap-2">
+                    <span class="mt-1 h-1 w-1 rounded-full bg-brand-400"></span>
+                    <span>Dedicated support and calibration sessions with our talent science team.</span>
+                  </li>
+                </ul>
+
+                <div class="flex flex-wrap items-center justify-between gap-3 pt-3 text-[0.7rem]">
+                  <p class="text-slate-400">
+                    Interested in partnering?
+                    <span class="text-slate-100">Speak with our employer team.</span>
+                  </p>
+                  <button
+                    class="inline-flex items-center gap-2 rounded-full border border-slate-700 px-3 py-1.5 text-[0.68rem] font-medium text-slate-100 transition hover:border-brand-400 hover:bg-slate-900"
+                  >
+                    Book a 20-minute intro
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ / footer -->
+        <section id="faq" class="border-t border-slate-900/80 bg-slate-950 py-14">
+          <div class="mx-auto max-w-6xl px-6 lg:px-4">
+            <div class="grid gap-10 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1.2fr)]">
+              <div class="space-y-4">
+                <p class="text-xs font-medium uppercase tracking-[0.22em] text-brand-300">
+                  Questions
+                </p>
+                <h2 class="text-2xl font-semibold tracking-tight text-white">
+                  Designed to be clear, fair, and candidate-first.
+                </h2>
+                <p class="text-sm text-slate-300">
+                  You stay in control of how your results are used. We never share your
+                  assessment without your permission, and you can delete your data at any
+                  time.
+                </p>
+              </div>
+
+              <div class="space-y-4 text-sm text-slate-200">
+                <details
+                  class="group rounded-2xl border border-slate-800 bg-slate-950/60 p-4"
+                >
+                  <summary
+                    class="flex cursor-pointer list-none items-center justify-between gap-3 text-sm font-medium text-white"
+                  >
+                    How long does the assessment take?
+                    <span class="text-slate-500 group-open:hidden">+</span>
+                    <span class="hidden text-slate-500 group-open:inline">−</span>
+                  </summary>
+                  <p class="mt-3 text-xs text-slate-300">
+                    Most candidates complete it in 8–10 minutes. You can pause and return
+                    at any time without losing progress.
+                  </p>
+                </details>
+
+                <details
+                  class="group rounded-2xl border border-slate-800 bg-slate-950/60 p-4"
+                >
+                  <summary
+                    class="flex cursor-pointer list-none items-center justify-between gap-3 text-sm font-medium text-white"
+                  >
+                    Will employers see my full report?
+                    <span class="text-slate-500 group-open:hidden">+</span>
+                    <span class="hidden text-slate-500 group-open:inline">−</span>
+                  </summary>
+                  <p class="mt-3 text-xs text-slate-300">
+                    No. You control what’s shared. Employers see a tailored summary focused
+                    on role alignment and work preferences—not private or sensitive data.
+                  </p>
+                </details>
+
+                <details
+                  class="group rounded-2xl border border-slate-800 bg-slate-950/60 p-4"
+                >
+                  <summary
+                    class="flex cursor-pointer list-none items-center justify-between gap-3 text-sm font-medium text-white"
+                  >
+                    Is there a cost to candidates?
+                    <span class="text-slate-500 group-open:hidden">+</span>
+                    <span class="hidden text-slate-500 group-open:inline">−</span>
+                  </summary>
+                  <p class="mt-3 text-xs text-slate-300">
+                    The core assessment and your insight report are free for candidates. We
+                    partner with employers to keep it that way.
+                  </p>
+                </details>
+              </div>
+            </div>
+
+            <footer
+              class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-slate-900 pt-6 text-xs text-slate-500 sm:flex-row"
+            >
+              <div class="flex items-center gap-2 text-slate-500">
+                <span>© <span id="year"></span> MatchWorks.</span>
+                <span class="hidden sm:inline">All rights reserved.</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <a href="#" class="hover:text-slate-300">Privacy</a>
+                <a href="#" class="hover:text-slate-300">Terms</a>
+                <a href="#" class="hover:text-slate-300">Contact</a>
+              </div>
+            </footer>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      // Simple year helper
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
