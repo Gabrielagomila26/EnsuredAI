@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You — Consultation Confirmed | MatchWorks</title>
+    <meta
+      name="description"
+      content="Thank you for booking a consultation with MatchWorks. Your session is confirmed and you now have access to your career alignment resources."
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#e8f0ff",
+                100: "#d0e0ff",
+                200: "#a6c1ff",
+                300: "#7c9cff",
+                400: "#5673d6",
+                500: "#3349b8",
+                600: "#263894",
+                700: "#1c2a70",
+                800: "#151f52",
+                900: "#0e1435",
+              },
+            },
+            boxShadow: {
+              soft: "0 22px 45px rgba(15, 23, 42, 0.2)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+    <main class="min-h-screen flex items-center justify-center px-6">
+      <div
+        class="relative w-full max-w-lg overflow-hidden rounded-3xl border border-slate-800 bg-slate-950/80 shadow-2xl shadow-slate-900/70"
+      >
+        <!-- Accent gradient -->
+        <div
+          class="pointer-events-none absolute -top-32 -right-10 h-52 w-52 rounded-full bg-brand-500/25 blur-3xl"
+          aria-hidden="true"
+        ></div>
+        <div
+          class="pointer-events-none absolute -bottom-32 -left-10 h-52 w-52 rounded-full bg-brand-800/40 blur-3xl"
+          aria-hidden="true"
+        ></div>
+
+        <section class="relative px-6 py-8 sm:px-8 sm:py-10">
+          <div
+            class="inline-flex items-center gap-2 rounded-full bg-brand-500/15 px-3 py-1 text-xs font-medium text-brand-100 ring-1 ring-brand-400/40"
+          >
+            <span class="inline-flex h-1.5 w-1.5 rounded-full bg-brand-300"></span>
+            Booking confirmed
+          </div>
+
+          <div class="mt-5 space-y-3">
+            <h1 class="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+              Thank you for your booking.
+            </h1>
+            <p class="text-sm text-slate-300 sm:text-base">
+              Your consultation is confirmed and we&#39;ve sent the details to your email.
+              You&#39;ll review your results in depth and leave with clear next steps for your
+              career path.
+            </p>
+          </div>
+
+          <div class="mt-6 space-y-4 rounded-2xl bg-slate-900/70 p-4 text-sm text-slate-200">
+            <div class="flex items-center justify-between gap-3">
+              <p class="font-medium text-slate-100">What happens next?</p>
+            </div>
+            <ul class="space-y-2 text-sm text-slate-300">
+              <li class="flex gap-2">
+                <span class="mt-1 h-1 w-1 rounded-full bg-brand-300"></span>
+                <span>You&#39;ll receive an email confirmation with your session time.</span>
+              </li>
+              <li class="flex gap-2">
+                <span class="mt-1 h-1 w-1 rounded-full bg-brand-300"></span>
+                <span>
+                  Your specialist will review your assessment results before the call so you
+                  can dive straight into recommendations.
+                </span>
+              </li>
+              <li class="flex gap-2">
+                <span class="mt-1 h-1 w-1 rounded-full bg-brand-300"></span>
+                <span>
+                  After the session, you&#39;ll get a short recap with 2–3 concrete action
+                  items.
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="mt-6 flex flex-col-reverse items-stretch justify-between gap-3 sm:flex-row sm:items-center"
+          >
+            <a
+              href="index.html"
+              class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-700 px-4 py-2 text-xs font-medium text-slate-200 transition hover:border-slate-500 hover:bg-slate-900"
+            >
+              Back to home
+            </a>
+            <a
+              href="results.html"
+              class="inline-flex items-center justify-center gap-2 rounded-full bg-brand-500 px-5 py-2.5 text-xs font-semibold text-white shadow-lg shadow-brand-900/50 transition hover:bg-brand-400"
+            >
+              Review my results
+            </a>
+          </div>
+
+          <p class="mt-4 text-[0.7rem] text-slate-500">
+            Need to reschedule or update your details?
+            <a
+              href="mailto:support@example.com"
+              class="ml-1 text-slate-200 underline-offset-4 hover:underline"
+              >Contact our support team</a
+            >.
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
+
