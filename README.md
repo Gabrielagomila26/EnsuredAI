@@ -1,6 +1,6 @@
-# Ensure AI — Job Matching Site
+# Ensured.AI — Job Matching Site
 
-Static site for the MatchWorks job-matching platform: landing page, assessment, results, and consultation booking flow.
+Static site for the Ensured.AI job-matching platform: landing page, assessment, results, and consultation booking flow.
 
 ## Deploy to GitHub Pages (get a live URL)
 
