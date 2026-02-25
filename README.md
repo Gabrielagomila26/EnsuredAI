@@ -20,7 +20,7 @@ Static site for the MatchWorks job-matching platform: landing page, assessment, 
 
    git init
    git add .
-   git commit -m "Initial commit: MatchWorks site"
+   git commit -m "Initial commit: EnsureAI site"
    git branch -M main
    git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
    git push -u origin main
@@ -37,7 +37,7 @@ Static site for the MatchWorks job-matching platform: landing page, assessment, 
    ```
    https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/
    ```
-   Example: `https://johndoe.github.io/matchworks/`
+   Example: `https://johndoe.github.io/EnsureAI/`
 
 ---
 
