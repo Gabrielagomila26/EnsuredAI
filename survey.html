@@ -660,9 +660,6 @@
         input.addEventListener("input", update);
         update();
       });
-    </script>
-
-    <script>
 
       // Submit handler: store responses locally, then go to results page
       document
@@ -680,7 +677,7 @@
             submittedAt: new Date().toISOString(),
           };
 
-          try {`
+          try {
             localStorage.setItem(
               "mw-assessment-responses",
               JSON.stringify(payload)
