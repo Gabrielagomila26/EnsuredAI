@@ -1,4 +1,4 @@
-# MatchWorks — Job Matching Site
+# Ensure AI — Job Matching Site
 
 Static site for the MatchWorks job-matching platform: landing page, assessment, results, and consultation booking flow.
 
